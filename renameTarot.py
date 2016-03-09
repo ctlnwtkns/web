@@ -9,7 +9,7 @@ os.chdir('/Users/caitlin/Documents/school/itc_110/abs_hw/ch9/waiteSmith')
 for folder, subFolder, fileName in os.walk('.'):
 	for files in fileName:
 		# Create a regex that matches part of filename to be substituted
-		nameRegex = re.compile(r'^(\d)(\d)?(.jpg)')
+		nameRegex = re.compile(r'^(\d)(\d)?(.-.)(T|W\w*)?(\W)?(\w*.)?(\w*.)?(\w*)(.jpg)')
 		mo = nameRegex.search(files)
 		if mo != None:
 		#TODO: Get the different parts of the filename.	
